@@ -59,35 +59,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(90,360)" to="(150,360)"/>
-    <wire from="(110,240)" to="(110,320)"/>
     <wire from="(900,230)" to="(900,450)"/>
     <wire from="(140,130)" to="(140,210)"/>
-    <wire from="(150,360)" to="(150,440)"/>
     <wire from="(490,290)" to="(490,310)"/>
+    <wire from="(260,330)" to="(260,410)"/>
+    <wire from="(90,450)" to="(900,450)"/>
+    <wire from="(90,410)" to="(260,410)"/>
+    <wire from="(470,340)" to="(470,420)"/>
     <wire from="(250,80)" to="(250,170)"/>
     <wire from="(820,170)" to="(840,170)"/>
+    <wire from="(100,240)" to="(100,400)"/>
     <wire from="(140,130)" to="(300,130)"/>
+    <wire from="(100,240)" to="(130,240)"/>
     <wire from="(410,230)" to="(440,230)"/>
     <wire from="(920,250)" to="(920,480)"/>
     <wire from="(250,80)" to="(460,80)"/>
-    <wire from="(110,240)" to="(130,240)"/>
-    <wire from="(90,320)" to="(110,320)"/>
-    <wire from="(150,440)" to="(740,440)"/>
     <wire from="(760,230)" to="(760,480)"/>
     <wire from="(910,150)" to="(920,150)"/>
-    <wire from="(130,450)" to="(900,450)"/>
     <wire from="(740,200)" to="(750,200)"/>
     <wire from="(490,360)" to="(490,480)"/>
+    <wire from="(90,420)" to="(470,420)"/>
     <wire from="(280,350)" to="(280,480)"/>
     <wire from="(460,80)" to="(830,80)"/>
     <wire from="(390,480)" to="(390,490)"/>
-    <wire from="(90,330)" to="(270,330)"/>
     <wire from="(280,290)" to="(280,300)"/>
-    <wire from="(130,370)" to="(130,450)"/>
     <wire from="(280,480)" to="(390,480)"/>
     <wire from="(520,130)" to="(760,130)"/>
-    <wire from="(90,370)" to="(130,370)"/>
     <wire from="(390,480)" to="(490,480)"/>
     <wire from="(460,80)" to="(460,170)"/>
     <wire from="(140,260)" to="(140,480)"/>
@@ -98,15 +95,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(760,480)" to="(920,480)"/>
     <wire from="(300,130)" to="(300,170)"/>
     <wire from="(520,130)" to="(520,170)"/>
+    <wire from="(470,340)" to="(480,340)"/>
+    <wire from="(260,330)" to="(270,330)"/>
     <wire from="(490,480)" to="(760,480)"/>
-    <wire from="(40,350)" to="(50,350)"/>
     <wire from="(140,480)" to="(280,480)"/>
+    <wire from="(40,430)" to="(50,430)"/>
+    <wire from="(90,440)" to="(740,440)"/>
+    <wire from="(90,400)" to="(100,400)"/>
     <wire from="(50,80)" to="(250,80)"/>
     <wire from="(760,130)" to="(760,180)"/>
     <wire from="(830,120)" to="(840,120)"/>
     <wire from="(900,230)" to="(910,230)"/>
     <wire from="(740,200)" to="(740,440)"/>
-    <wire from="(90,340)" to="(480,340)"/>
     <wire from="(760,130)" to="(770,130)"/>
     <wire from="(920,150)" to="(920,200)"/>
     <comp lib="0" loc="(770,130)" name="Splitter">
@@ -133,11 +133,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A"/>
     </comp>
     <comp loc="(920,210)" name="Buffer"/>
-    <comp lib="0" loc="(40,350)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
+    <comp loc="(70,400)" name="Codificador"/>
     <comp lib="0" loc="(200,230)" name="Pin">
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
@@ -146,6 +142,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp loc="(870,120)" name="rot_L"/>
     <comp loc="(490,180)" name="Sub-4"/>
+    <comp lib="0" loc="(40,430)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
     <comp lib="0" loc="(50,130)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
@@ -158,7 +159,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="OVERFLOW"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp loc="(70,320)" name="Codificador"/>
     <comp loc="(490,320)" name="Buffer"/>
   </circuit>
   <circuit name="Buffer">
